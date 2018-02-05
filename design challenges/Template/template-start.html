@@ -1,0 +1,87 @@
+<!-- 
+- - - - - - - - - - - - - - - - -
+INSTRUCTIONS 
+- - - - - - - - - - - - - - - - -
+
+Create an html document, that passes W3C validation, and which uses flexbox to display a list of items within a content card as per the design supplied. 
+Fonts, colours, spacing should match as closely as possible to the design. Use your eye to judge, we will be looking for balance and precision.
+You should use straight css and javascript (no jquery) and this should be organised as per the project structure.
+
+
+User the content links below for the images within your design:
+
+https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/93.jpg
+https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/78.jpg
+https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/59.jpg
+https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/46.jpg
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="flex w3-card" id="contact-layout">
+            <ul>
+                <li>
+                    <div class="contact">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/93.jpg" alt="">
+                        <div class="data">
+                            <h5>Linda Hart</h5>
+                            <p>6765 Shady Ln Dr</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="contact">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/46.jpg" alt="">
+                        <div class="data">
+                            <h5>Rodger Medina</h5>
+                            <p>2420 Paddock Way</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="contact">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/59.jpg" alt="">
+                        <div class="data">
+                            <h5>Dean Sullivan</h5>
+                            <p>6727 Airplane Ave</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="contact">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/78.jpg" alt="">
+                        <div class="data">
+                            <h5>Elizabeth Austin</h5>
+                            <p>6685 Blossom Hill Rd</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <input class="hide-content" type="button" value="HIDE CONTENT"/>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
