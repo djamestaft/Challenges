@@ -8,10 +8,12 @@ Some hints are given below but you can use any structure or approach of your cho
 var button = document.querySelector('.hide-content');
 
 button.addEventListener('click', function(e) {
-    var x = document.getElementById("contact-layout");
-    if (x.style.display === "none") {
-        x.style.display = "flex";
+    var contactLayout = document.getElementById("contact-layout");
+    if (contactLayout.style.display === "none") {
+        contactLayout.style.display = "flex";
+        button.value = "HIDE CONTENT";
     } else {
-        x.style.display = "none";
+        contactLayout.style.display = "none";
+        button.value = "SHOW CONTENT";
     }
 });
