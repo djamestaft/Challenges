@@ -1,18 +1,16 @@
 //lists
-let santasList = ["Tom","Errol","PEter","Sam","Jennifer"];
+let santasList = ["Tom", "Errol", "peter", "Sam", "Jennifer"];
 let children = ["Errol", "Peter", "Jennifer"];
 
 //function to find children
-function findChildren(santasList, children) {
-    let naughtyList = [];
+const findChildren = (santasList, children) => {
     
-    for (let x of santasList) {
-        for (let y of children) {
-            if (x.toLowerCase(0) === y.toLowerCase(0)) {
-                naughtyList.push(y);
-            }
-        }
-    }
+    //filter santasList
+    let naughtyList = santasList.filter((value) => {
+        value = value.charAt(0).toUpperCase() + value.slice(1);
+        return children.includes(value);
+    });
+    
     return naughtyList;
 }
 
